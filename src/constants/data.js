@@ -25,42 +25,42 @@ export const clientReviews = [
 	{
 		id: 1,
 		name: "Emily Johnson",
-		position: "Marketing Director at GreenLeaf",
+		position: "Upwork Client",
 		img: "assets/review1.png",
-		review: "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+		review: "Working with Abdelrahman was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
 	},
 	{
 		id: 2,
 		name: "Mark Rogers",
-		position: "Founder of TechGear Shop",
+		position: "local",
 		img: "assets/review2.png",
-		review: "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+		review: "Abdelrahman’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
 	},
 	{
 		id: 3,
 		name: "John Dohsas",
-		position: "Project Manager at UrbanTech ",
+		position: "Upwork client ",
 		img: "assets/review3.png",
-		review: "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+		review: "I can’t say enough good things about Abdelrahman. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
 	},
 	{
 		id: 4,
 		name: "Ether Smith",
-		position: "CEO of BrightStar Enterprises",
+		position: "Freelancer Clinet",
 		img: "assets/review4.png",
-		review: "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+		review: "Abdelrahman was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
 	},
 ];
 
 export const myProjects = [
 	{
-		title: "Podcastr - AI Podcast Platform",
-		desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+		title: "Fitnes-workout exercises",
+		desc: "Showing the most usefull and commone exercises as GIF for the full body, and you can search for spasific muscle group",
 		subdesc:
-			"Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-		href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+			"Fitness Frind is your ultimate workout companion — explore exercises by muscle group with engaging GIF demos, search specific moves with ease, and power your fitness journey using real-time data from RapidAPI. Built with React, React Router, and Material UI for a smooth, responsive experience. ",
+		href: "https://fitnes-frind.netlify.app/",
 		texture: "/textures/project/project1.mp4",
-		logo: "/assets/project-logo1.png",
+		logo: "/assets/muscle.png",
 		logoStyle: {
 			backgroundColor: "#2A1816",
 			border: "0.2px solid #36201D",
@@ -75,29 +75,24 @@ export const myProjects = [
 			},
 			{
 				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
+				name: "Material-Ui",
+				path: "assets/material-ui.png",
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "React-router",
+				path: "/assets/react-router.svg",
 			},
 		],
 	},
 	{
-		title: "LiveDoc - Real-Time Google Docs Clone",
-		desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+		title: "Coffee-restront showcase",
+		desc: "BrewMaster — Elevating Coffee Restaurant Experiences",
 		subdesc:
-			"With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-		href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+			"BrewMaster is a modern web solution tailored for coffee restaurants, designed to showcase menus, highlight signature brews, manage customer engagement, and streamline operations. From cozy cafés to bustling coffee chains, BrewMaster brings your brand to life with an elegant, responsive interface built to impress.",
+		href: "https://coffeesit.netlify.app/",
 		texture: "/textures/project/project2.mp4",
-		logo: "/assets/project-logo2.png",
+		logo: "/assets/coffe.png",
 		logoStyle: {
 			backgroundColor: "#13202F",
 			border: "0.2px solid #17293E",
@@ -107,34 +102,29 @@ export const myProjects = [
 		tags: [
 			{
 				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
+				name: "Html",
+				path: "/assets/html.png",
 			},
 			{
 				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
+				name: "Css",
+				path: "assets/css.png",
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "JavaScrip",
+				path: "/assets/javascript.png",
 			},
 		],
 	},
 	{
-		title: "CarePulse - Health Management System",
-		desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+		title: "Coding bootCamp",
+		desc: "bootCamp — Launch Your Tech Career with Confidence",
 		subdesc:
-			"With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-		href: "https://www.youtube.com/watch?v=lEflo_sc82g",
+			"bootCamp is a dynamic coding bootcamp platform designed to help aspiring developers build real-world skills through hands-on projects, expert-led courses, and a supportive learning community. Whether you're diving into web development, mastering full-stack frameworks, or preparing for tech interviews, bootCamp empowers you to code your future with purpose.",
+		href: "https://bootcampcampny.netlify.app/",
 		texture: "/textures/project/project3.mp4",
-		logo: "/assets/project-logo3.png",
+		logo: "/assets/bootcamp.png",
 		logoStyle: {
 			backgroundColor: "#60f5a1",
 			background:
@@ -146,34 +136,34 @@ export const myProjects = [
 		tags: [
 			{
 				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
+				name: "Html",
+				path: "/assets/html.png",
 			},
 			{
 				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
+				name: "Css",
+				path: "assets/css.png",
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
+				name: "JavaScrip",
+				path: "/assets/javascript.png",
 			},
 			{
 				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "bootstrap",
+				path: "/assets/bootstrap.png",
 			},
 		],
 	},
 	{
-		title: "Horizon - Online Banking Platform",
-		desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+		title: "Marketing Landing-page",
+		desc: "A sleek and responsive marketing landing page for MacBook Air, built using modern web technologies to provide a seamless user experience.",
 		subdesc:
-			"Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-		href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
+			"Fully responsive design for all devices Modern UI built with Tailwind CSS Fast and optimized using Vite Multi-page navigation using React Router v6 Dedicated pages for: Home (Hero section, product highlights, call-to-action) Features Detailed specifications and unique selling points Contact Us Form for inquiries and supportSmooth scrolling and animations for better UX.",
+		href: "https://abdelrahman-bit.github.io/MacBook-landing-page",
 		texture: "/textures/project/project4.mp4",
-		logo: "/assets/project-logo4.png",
+		logo: "/assets/apple-icon.jpg",
 		logoStyle: {
 			backgroundColor: "#0E1F38",
 			border: "0.2px solid #0E2D58",
@@ -193,53 +183,17 @@ export const myProjects = [
 			},
 			{
 				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
+				name: "React-router",
+				path: "/assets/react-router.svg",
 			},
 			{
 				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
+				name: "Vite",
+				path: "/assets/vite.svg",
 			},
 		],
 	},
-	{
-		title: "Imaginify - AI Photo Manipulation App",
-		desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
-		subdesc:
-			"Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-		href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-		texture: "/textures/project/project5.mp4",
-		logo: "/assets/project-logo5.png",
-		logoStyle: {
-			backgroundColor: "#1C1A43",
-			border: "0.2px solid #252262",
-			boxShadow: "0px 0px 60px 0px #635BFF4D",
-		},
-		spotlight: "/assets/spotlight5.png",
-		tags: [
-			{
-				id: 1,
-				name: "React.js",
-				path: "/assets/react.svg",
-			},
-			{
-				id: 2,
-				name: "TailwindCSS",
-				path: "assets/tailwindcss.png",
-			},
-			{
-				id: 3,
-				name: "TypeScript",
-				path: "/assets/typescript.png",
-			},
-			{
-				id: 4,
-				name: "Framer Motion",
-				path: "/assets/framer.png",
-			},
-		],
-	},
+	
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {

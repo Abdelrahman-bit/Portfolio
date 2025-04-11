@@ -13,7 +13,7 @@ const About = () => {
         }, 2000)
     }
 	return (
-		<section id="about" className='c-space my-20'>
+		<section id='about' className='c-space my-20'>
 			<div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
 				{/* first grid */}
 				<div className='col-span-1 xl:row-span-3'>
@@ -23,8 +23,11 @@ const About = () => {
 							<p className='grid-headtext'>Hi, I'm Abderahman</p>
 							<p className='grid-subtext'>
 								with 2 years of experience, I have build my skills in web latest technoloies and framworks with a
-								focus on animated 3D websites.
+								passion of learning new things.
 							</p>
+							<a href=''>
+								<Button name='See My Resume' isBeam containerCalss='mt-5' />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -68,7 +71,7 @@ const About = () => {
 						<div>
 							<p className='grid-headtext'>I work remotely across most timezones.</p>
 							<p className='grid-subtext'>I'm based in Cairo, with remote work abailable.</p>
-							<a href="#contact">
+							<a href='#contact'>
 								<Button name='Contact Me' isBeam containerCalss='w-full mt-10' />
 							</a>
 						</div>
@@ -99,7 +102,7 @@ const About = () => {
 							<p className='grid-subtext text-center'>Contact me</p>
 							<div className=' copy-container ' onClick={handelCopy}>
 								<img src={hasCopied ? "/assets/tick.svg" : "/assets/copy.svg"} alt='copy' />
-								<p className=" font-medium text-gray_gradient text-white">abdelrahman.mohamed4030@gmail.com</p>
+								<p className=' font-medium text-gray_gradient text-white'>abdelrahman.mohamed4030@gmail.com</p>
 							</div>
 						</div>
 					</div>

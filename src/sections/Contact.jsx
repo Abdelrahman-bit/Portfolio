@@ -113,7 +113,7 @@ const Contact = () => {
 								required
 								rows={5}
 								className='field-input'
-								placeholder='Share your thoughts or inquiries...'
+								placeholder='Hi Abdelrahman I wann Hire You Now.'
 							/>
 						</label>
 

@@ -8,15 +8,29 @@ const Footer = () => {
 			</div>
 
 			<div className='flex gap-3'>
-				<div className='social-icon'>
-					<img src='/assets/github.svg' alt='github' className='w-1/2 h-1/2' />
-				</div>
-				<div className='social-icon'>
-					<img src='/assets/twitter.svg' alt='twitter' className='w-1/2 h-1/2' />
-				</div>
-				<div className='social-icon'>
-					<img src='/assets/instagram.svg' alt='instagram' className='w-1/2 h-1/2' />
-				</div>
+				<a href='https://github.com/Abdelrahman-bit' target='_blank'>
+					<div className='social-icon'>
+						<img src='/assets/github.svg' alt='github' className='w-1/2 h-1/2' />
+					</div>
+				</a>
+				<a href='www.linkedin.com/in/abdelrahman-mohamed-soliman-705b7a20b' target='_blank'>
+					<div className='social-icon'>
+						<img
+							src='https://img.icons8.com/?size=100&id=447&format=png&color=ffffff'
+							alt='linkedin'
+							className='w-1/2 h-1/2 text-white'
+						/>
+					</div>
+				</a>
+				<a href='' target='_blank'>
+					<div className='social-icon'>
+						<img
+							src='https://img.icons8.com/?size=100&id=44091&format=png&color=ffffff'
+							alt='resume'
+							className='w-1/2 h-1/2'
+						/>
+					</div>
+				</a>
 			</div>
 
 			<p className='text-white-500'>© 2025 Abdelrahman mohamed. All rights reserved.</p>
