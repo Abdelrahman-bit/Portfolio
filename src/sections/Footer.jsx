@@ -13,7 +13,7 @@ const Footer = () => {
 						<img src='/assets/github.svg' alt='github' className='w-1/2 h-1/2' />
 					</div>
 				</a>
-				<a href='www.linkedin.com/in/abdelrahman-mohamed-soliman-705b7a20b' target='_blank'>
+				<a href='https://www.linkedin.com/in/abdelrahman-mohamed-soliman-705b7a20b' target='_blank'>
 					<div className='social-icon'>
 						<img
 							src='https://img.icons8.com/?size=100&id=447&format=png&color=ffffff'
@@ -22,7 +22,7 @@ const Footer = () => {
 						/>
 					</div>
 				</a>
-				<a href='' target='_blank'>
+				<a href='https://drive.google.com/file/d/1s9FvFmYcziRZkYmF-VNwTzbqmvyjeBwr/view?usp=sharing' target='_blank'>
 					<div className='social-icon'>
 						<img
 							src='https://img.icons8.com/?size=100&id=44091&format=png&color=ffffff'

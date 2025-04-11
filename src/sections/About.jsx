@@ -3,15 +3,15 @@ import Globe from "react-globe.gl";
 import Button from "../components/Button";
 
 const About = () => {
-    const [hasCopied, setHasCopied] = useState(false)
-    const handelCopy = ()=>{
-        navigator.clipboard.writeText('abdelrahman.mohamed4030@gmail.com');
-        setHasCopied(true);
+	const [hasCopied, setHasCopied] = useState(false);
+	const handelCopy = () => {
+		navigator.clipboard.writeText("abdelrahman.mohamed4030@gmail.com");
+		setHasCopied(true);
 
-        setTimeout(()=>{
-            setHasCopied(false)
-        }, 2000)
-    }
+		setTimeout(() => {
+			setHasCopied(false);
+		}, 2000);
+	};
 	return (
 		<section id='about' className='c-space my-20'>
 			<div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
@@ -25,7 +25,10 @@ const About = () => {
 								with 2 years of experience, I have build my skills in web latest technoloies and framworks with a
 								passion of learning new things.
 							</p>
-							<a href=''>
+							<a
+								href='https://drive.google.com/file/d/1s9FvFmYcziRZkYmF-VNwTzbqmvyjeBwr/view?usp=sharing'
+								target='_blank'
+							>
 								<Button name='See My Resume' isBeam containerCalss='mt-5' />
 							</a>
 						</div>
