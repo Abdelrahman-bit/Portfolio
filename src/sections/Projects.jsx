@@ -4,20 +4,22 @@ import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 import DemoComputer from "../components/DemoComputer";
+import { useMediaQuery } from "react-responsive";
 
 const Projects = () => {
-    const projectCount = myProjects.length;
-    const [selectedIndex, setSelectedIndex] = useState(0);
+	const isMobile = useMediaQuery({ maxWidth: 768 });
+	const projectCount = myProjects.length;
+	const [selectedIndex, setSelectedIndex] = useState(0);
 	const currentProject = myProjects[selectedIndex];
-    const handleNavigation = (direction) =>{
-        setSelectedIndex((prev)=>{
-            if(direction === 'previous'){
-                return prev === 0? projectCount-1: prev-1
-            }else{
-                return prev === projectCount-1 ? 0 : prev + 1
-            }
-        })
-    }
+	const handleNavigation = (direction) => {
+		setSelectedIndex((prev) => {
+			if (direction === "previous") {
+				return prev === 0 ? projectCount - 1 : prev - 1;
+			} else {
+				return prev === projectCount - 1 ? 0 : prev + 1;
+			}
+		});
+	};
 	return (
 		<section id='work' className='c-sapce my-20 mx-10'>
 			<p className='head-text'> My Work </p>
@@ -35,43 +37,49 @@ const Projects = () => {
 						<p className='animatedText'> {currentProject.subdesc} </p>
 					</div>
 
-                    <div className="flex items-center justify-between flex-wrap gap-5">
-                        <div className="flex items-center gap-3">
-                            {currentProject.tags.map((tag,index)=>(
-                                <div key={index} className="tech-logo">
-                                    <img src={tag.path} alt={tag.name} />
-                                </div>
-                            ))}
-                        </div>
-                        <a href={currentProject.href} className="flex items-center gap-2 cursor-pointer text-white-600" target="_blank" rel="noreferrer">
-                            <p>Check live Site</p>
-                            <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3"/>
-                        </a>
-                    </div>
-                    <div className="flex justify-between items-center mt-7">
-                            <button className="arrow-btn" onClick={()=> handleNavigation('previous')}>
-                                <img src="/assets/left-arrow.png" alt="left arrow" className="w-4 h-4"/>
-                            </button>
-                            <button className="arrow-btn" onClick={()=> handleNavigation('next')}>
-                                <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4"/>
-                            </button>
-                    </div>
+					<div className='flex items-center justify-between flex-wrap gap-5'>
+						<div className='flex items-center gap-3'>
+							{currentProject.tags.map((tag, index) => (
+								<div key={index} className='tech-logo'>
+									<img src={tag.path} alt={tag.name} />
+								</div>
+							))}
+						</div>
+						<a
+							href={currentProject.href}
+							className='flex items-center gap-2 cursor-pointer text-white-600'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<p>Check live Site</p>
+							<img src='/assets/arrow-up.png' alt='arrow' className='w-3 h-3' />
+						</a>
+					</div>
+					<div className='flex justify-between items-center mt-7'>
+						<button className='arrow-btn' onClick={() => handleNavigation("previous")}>
+							<img src='/assets/left-arrow.png' alt='left arrow' className='w-4 h-4' />
+						</button>
+						<button className='arrow-btn' onClick={() => handleNavigation("next")}>
+							<img src='/assets/right-arrow.png' alt='right arrow' className='w-4 h-4' />
+						</button>
+					</div>
 				</div>
-                <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-                    <Canvas>
-                        <ambientLight intensity={Math.PI} />
-                        <directionalLight position={[10,10,5]} />
-                        <Center>
-                            <Suspense fallback={<CanvasLoader />}>
-                                <group scale={2} position={[0, -3, 0]} rotation={[0, -.1, 0]} >
-                                    <DemoComputer />
-                                </group>
-                            </Suspense>
-                        </Center>
-                        <OrbitControls maxPolarAngle={Math.PI/2} enableZoom={false} />
-                    </Canvas>
-
-                </div>
+				{isMobile || (
+					<div className='border border-black-300 bg-black-200 rounded-lg h-96 md:h-full'>
+						<Canvas>
+							<ambientLight intensity={Math.PI} />
+							<directionalLight position={[10, 10, 5]} />
+							<Center>
+								<Suspense fallback={<CanvasLoader />}>
+									<group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
+										<DemoComputer />
+									</group>
+								</Suspense>
+							</Center>
+							<OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
+						</Canvas>
+					</div>
+				)}
 			</div>
 		</section>
 	);
