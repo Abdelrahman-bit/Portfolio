@@ -7,7 +7,7 @@ import DemoComputer from "../components/DemoComputer";
 import { useMediaQuery } from "react-responsive";
 
 const Projects = () => {
-	const isMobile = useMediaQuery({ maxWidth: 768 });
+	const isLagre = useMediaQuery({ maxWidth: 1000 });
 	const projectCount = myProjects.length;
 	const [selectedIndex, setSelectedIndex] = useState(0);
 	const currentProject = myProjects[selectedIndex];
@@ -64,7 +64,7 @@ const Projects = () => {
 						</button>
 					</div>
 				</div>
-				{isMobile || (
+				{isLagre || (
 					<div className='border border-black-300 bg-black-200 rounded-lg h-96 md:h-full'>
 						<Canvas>
 							<ambientLight intensity={Math.PI} />
