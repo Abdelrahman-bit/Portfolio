@@ -76,7 +76,5 @@ Feel free to reach out via the contact form on the site or [www.linkedin.com/in/
 📄 License
 This project is open-source and available under the MIT License.
 
----
 
-Let me know if you want to add screenshots or deployment instructions (e.g., Netlify), or personalize the contact info and repo links!
 
