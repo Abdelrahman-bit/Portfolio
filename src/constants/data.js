@@ -54,6 +54,97 @@ export const clientReviews = [
 
 export const myProjects = [
 	{
+		title: "Issue tracker application",
+		desc: "Helps you tracking issues and make things doen.",
+		subdesc:
+			"A clean and minimal issue tracking app built with Next.js 15, Tailwind CSS, TypeScript, Prisma, and PostgreSQL. Features include Google/GitHub login, issue creation and assignment, priority/status management, and a responsive dashboard UI.",
+		href: "https://issue-tracker-dun-seven.vercel.app/",
+		texture: "/textures/project/project3.mp4",
+		logo: "/assets/issue-tracker.png",
+		logoStyle: {
+			backgroundColor: "#2A1816",
+			border: "0.2px solid #36201D",
+			boxShadow: "0px 0px 60px 0px #AA3C304D",
+		},
+		spotlight: "/assets/spotlight1.png",
+		tags: [
+			{
+				id: 1,
+				name: "React.js",
+				path: "/assets/react.svg",
+			},
+			{
+				id: 2,
+				name: "nextjs",
+				path: "assets/nextjs-icon.svg",
+			},
+			{
+				id: 3,
+				name: "PostgreSQL",
+				path: "/assets/postgres.webp",
+			},
+			{
+				id: 4,
+				name: "Next auth",
+				path: "/assets/next-auth.png",
+			},
+			{
+				id: 5,
+				name: "TailwindCSS",
+				path: "assets/tailwindcss.png",
+			},
+			{
+				id: 6,
+				name: "Prisma",
+				path: "assets/prisma.svg",
+			},
+		],
+	},
+	{
+		title: "Iphone website clone",
+		desc: "website clone from one of modern websites out there",
+		subdesc:
+			"A high-fidelity, animated clone of Apple’s iPhone 15 Pro landing page built with Next.js, Tailwind CSS, Three.js, React Three Fiber, and GSAP. Features smooth 3D interactions, scroll-based animations, and a fully responsive design.",
+		href: "https://iphone-clone-rosy.vercel.app/",
+		texture: "/textures/project/project4.mp4",
+		logo: "/assets/apple-icon.jpg",
+		logoStyle: {
+			backgroundColor: "#60f5a1",
+			background:
+				"linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+			border: "0.2px solid rgba(208, 213, 221, 1)",
+			boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
+		},
+		spotlight: "/assets/spotlight1.png",
+		tags: [
+			{
+				id: 1,
+				name: "React.js",
+				path: "/assets/react.svg",
+			},
+			{
+				id: 2,
+				name: "nextjs",
+				path: "assets/nextjs-icon.svg",
+			},
+			{
+				id: 3,
+				name: "TailwindCSS",
+				path: "assets/tailwindcss.png",
+			},
+			{
+				id: 4,
+				name: "Three.js",
+				path: "assets/threejs.png",
+			},
+			{
+				id: 5,
+				name: "gsap",
+				path: "assets/gsap.png",
+			},
+		],
+	},
+	{
 		title: "Fitnes-workout exercises",
 		desc: "Showing the most usefull and commone exercises as GIF for the full body, and you can search for spasific muscle group",
 		subdesc:
@@ -193,7 +284,6 @@ export const myProjects = [
 			},
 		],
 	},
-	
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
